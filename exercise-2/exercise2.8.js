@@ -1,0 +1,1 @@
+console.log(Math.round(5292*0.1/100));

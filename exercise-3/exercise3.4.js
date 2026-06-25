@@ -1,0 +1,1 @@
+console.log('Tota cost:$'+(5+3));

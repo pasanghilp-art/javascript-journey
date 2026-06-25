@@ -1,0 +1,1 @@
+console.log(`Total before tax:$${(5788 + 988)/100}`);

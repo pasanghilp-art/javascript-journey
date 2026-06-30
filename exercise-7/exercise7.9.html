@@ -1,0 +1,19 @@
+<body>
+        <button onclick="
+        updateCartQuantity(1);">1</button>
+        <button onclick="
+        updateCartQuantity(-1);">1</button>
+    <script>
+        function updateCartQuantity(item){
+            cartQuantity = 0
+            if(cartQuantity>10){
+                console.log('cart is max');
+            } else if (cartQuantity<0){
+                console.log('cart is not enough');
+            } else {
+                cartQuantity+= item;
+                console.log(cartQuantity);
+            }
+        }
+    </script>
+</body>

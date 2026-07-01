@@ -1,0 +1,1 @@
+console.log('test'.repeat(3));

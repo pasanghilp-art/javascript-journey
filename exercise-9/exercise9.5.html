@@ -1,0 +1,18 @@
+<body>
+    <input placeholder="name" class="text" onkeydown="
+        if(event.key === 'Enter'){
+            inputScript();
+        }">
+
+    <button onclick="
+        inputScript();
+        "> Submit </button>
+
+        <p class="paragraph"></p>
+        <script>
+            function inputScript(){
+                inputElement = document.querySelector('.text');
+                 document.querySelector('.paragraph').innerHTML=`your name is ${inputElement.value}`;
+            }
+        </script>
+</body>

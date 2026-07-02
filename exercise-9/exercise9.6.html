@@ -1,0 +1,17 @@
+<body>
+    <input placeholder="name" class="text" onkeyup="
+            inputScript();
+        ">
+
+    <button onclick="
+        inputScript();
+        "> Submit </button>
+
+        <p class="paragraph"></p>
+        <script>
+            function inputScript(){
+                inputElement = document.querySelector('.text');
+                 document.querySelector('.paragraph').innerHTML=`your name is ${inputElement.value}`;
+            }
+        </script>
+</body>

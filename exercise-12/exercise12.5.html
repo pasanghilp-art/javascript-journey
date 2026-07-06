@@ -1,0 +1,16 @@
+<body>
+    <button onclick="buttonActivation();">
+        start
+    </button>
+<p class="paragraph-js"></p>
+
+<script>
+    function buttonActivation(){
+        const paragraph=document.querySelector('.paragraph-js');
+        paragraph.innerHtML='added';
+        setTimeout(function(){
+            paragraph.innerHTML='';
+        },2000);
+    }
+</script>
+</body>

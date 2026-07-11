@@ -66,8 +66,10 @@ function updateCartQuantity(){
             cartQuantity += cartItem.quantity;
         });
 
-         document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+         document.querySelector('.js-cart-quantity').innerHTML = cartQuantity === 0 ? '': cartQuantity;
 }
+
+updateCartQuantity();
 
 document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
     button.addEventListener('click', () => {

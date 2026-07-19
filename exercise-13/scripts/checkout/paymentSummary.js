@@ -32,14 +32,22 @@ export function renderPaymentSummary(){
             Order Summary
           </div>
 
-          <div class="payment-summary-row">
+          <div class="
+              payment-summary-row
+              js-payment-summary-row">
             <div>Items (${cartQuantity}):</div>
             <div class="payment-summary-money">$${formatCurrency(productPriceCents)}</div>
           </div>
 
           <div class="payment-summary-row">
             <div>Shipping &amp; handling:</div>
-            <div class="payment-summary-money">$${formatCurrency(shippingPriceCents)}</div>
+            <div class="
+                  payment-summary-money
+                  js-payment-summary-money
+                  js-payment-summary-money-${
+                    shippingPriceCents
+                  }
+                  ">$${formatCurrency(shippingPriceCents)}</div>
           </div>
 
           <div class="payment-summary-row subtotal-row">

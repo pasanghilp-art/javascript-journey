@@ -55,6 +55,31 @@ class Clothing extends Product {
       `;
     }
 }
+
+/*
+const date = new Date();
+console.log(date);
+console.log(date.toLocaleTimeString());
+
+const object3={
+method(){
+  console.log(this);
+  }
+} inside a method, this points to object3
+
+function logThis(){
+  console.log(this);
+} inside a function this = undefined
+
+logTHis.call('hello'); But we can change this
+
+[1,2,3].forEach(()=>{
+  console.log(this);
+  }); 
+  arrow function, do not change the value of "this"
+
+*/
+
 const product1 = new Product({
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",

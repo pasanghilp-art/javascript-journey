@@ -7,7 +7,7 @@ import { loadCart } from '../data/cart.js';
 //import '../data/cart-oop.js';
 
 async function loadPage (){
-    console.log('loadPage');
+    try{
     await loadProductsFetch();
 
     await new Promise((resolve)=>{
@@ -15,6 +15,10 @@ async function loadPage (){
                 resolve();
             });
         });
+    } catch (error){
+        console.log('Unexpected error. Try again later');
+    }
+    
     
     renderCheckoutHeader();
     renderOrderSummary();

@@ -6,20 +6,39 @@ import { loadCart } from '../data/cart.js';
 //import '../data/backend-practice.js';
 //import '../data/cart-oop.js';
 
+async function loadPage (){
+    console.log('loadPage');
+    await loadProductsFetch();
 
+    await new Promise((resolve)=>{
+            loadCart(()=>{
+                resolve();
+            });
+        });
+    
+    renderCheckoutHeader();
+    renderOrderSummary();
+    renderPaymentSummary();
+}
+loadPage();
+
+/*
 Promise.all([
-        loadProductsFetch(),
-        new Promise((resolve)=>{
-                loadCart(()=>{
-                    resolve();
-                });
-            })
+    loadProductsFetch(),
+    new Promise((resolve)=>{
+            loadCart(()=>{
+                resolve();
+            });
+        })
+
 ]).then((values)=>{
     console.log(values);
     renderCheckoutHeader();
     renderOrderSummary();
     renderPaymentSummary();
 });
+*/
+
 
 /*
 new Promise((resolve)=>{

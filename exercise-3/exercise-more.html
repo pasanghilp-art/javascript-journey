@@ -1,0 +1,18 @@
+<HTML>
+    <head>
+    </head>
+    <body>
+        <script>
+            function reverseWord(word){
+                return word.split("").reverse().join("");
+            }
+            console.log(reverseWord("olleh"));
+
+            function isPalindrome(word){
+                const reverseWord = word.split("").reverse().join("");
+                return word === reverseWord;
+            }
+            console.log(isPalindrome("racecar"));
+        </script>
+    </body>
+</HTML>

@@ -26,10 +26,20 @@
             }
             console.log(SmallestNumber([1,2,3,4,5]));
 
-            function FindBiggest(arr){
+            function findBiggest(arr){
                 return Math.max(...arr);
             }
-            console.log(FindBiggest([1,2,3,4]));
+            console.log(findBiggest([1,2,3,4]));
+
+            function findSmallest(arr){
+                return Math.min(...arr);
+            }
+            console.log(findSmallest([1,2,3,4]));
+
+            let arr = [1,2,3];
+
+            arr = arr.slice(1);
+            console.log(arr);
         </script>
     </body>
 </HTML>

@@ -40,6 +40,11 @@
 
             arr = arr.slice(1);
             console.log(arr);
+
+            function greet(name, callback){
+                callback(`Hello, ${name}`);
+            }
+                greet('pasang', message => console.log(message));
         </script>
     </body>
 </HTML>

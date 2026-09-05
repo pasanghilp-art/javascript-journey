@@ -115,6 +115,27 @@
                 }
             }
             fibonacciDistruct(9);
+
+            let cup1 = 'milk';
+            let cup2 = 'water';
+
+            [cup1,cup2] = [cup2,cup1]
+
+            console.log("cup1 has:",cup1);
+
+            function reverse(arr){
+                let first = arr[0];
+                let last = arr[arr.length -1];
+
+                while(first<last){
+                    [first,last] = [last,first];
+
+                    first++;
+                    last--;
+                }
+                console.log(arr);
+            }
+            reverse([1,2,3,4]);
         </script>
     </body>
 </HTML>
